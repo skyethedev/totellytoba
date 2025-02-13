@@ -150,6 +150,7 @@
       .primary-button:hover {
         background-color: #1558a3; /* Darker blue for hover effect */
       }
+
       /* Style for each product */
       .product {
         display: inline-block;
@@ -161,6 +162,35 @@
       .product:hover {
         transform: translateY(-10px);
         box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        #products {
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        .product img {
+          width: 100%;
+          height: auto;
+        }
+
+        #about img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      @media (min-width: 768px) {
+        #products {
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
       }
     </style>
   </head>
@@ -219,14 +249,15 @@
         Welcome to totellyToba! We are a proud Manitoba-based company creating
         stylish and practical tote bags inspired by the beauty of our province.
         <br />
-        Buy a bag for a starting price of <b>$16.99</b>
+        Buy a bag for a price of <b>$20</b>
       </p>
+
       <br />
       <img
-        src="Images/Screenshot_20250122_204201~2.jpg"
+        src="Images/newteam.jpg"
         alt="Team Photo"
         width="800px"
-        height="500px" />
+        height="600px" />
     </section>
 
     <section id="contact">
