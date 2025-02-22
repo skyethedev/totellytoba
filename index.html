@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>totellyToba</title>
+    <title>TotellyToba</title>
     <style>
       * {
         margin: 0;
@@ -15,7 +15,9 @@
         font-family: Arial, sans-serif;
         line-height: 1.6;
         color: #1c1c1c; /* Dark gray text color */
-        background-color: #f2f2f2; /* Light gray background */
+        background-color: #ffffff; /* Light gray background */
+        scroll-padding-top: 10px; /* Prevent header from overlapping sections */
+        scroll-behavior: smooth; /* Smooth scrolling */
       }
 
       header {
@@ -59,9 +61,9 @@
       }
 
       section {
-        padding: 100px 20px;
+        padding: 50px 20px;
         max-width: 1200px;
-        margin: 80px auto 0 auto;
+        margin: 30px auto 0 auto;
       }
 
       #hero {
@@ -69,7 +71,22 @@
           center/cover;
         color: #1c1c1c; /* Dark gray text */
         text-align: center;
-        padding: 200px 20px;
+        position: relative;
+        height: 500px; /* Adjust height if needed */
+      }
+
+      .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3rem; /* Adjust font size for prominence */
+        font-family: "Arial", sans-serif;
+        color: white; /* White text for contrast on dark background */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better contrast */
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
 
       #hero h1 {
@@ -120,7 +137,7 @@
       }
 
       #contact ul li a {
-        color: #7f3f98; /*  links */
+        color: #7f3f98; /* Links */
         text-decoration: none;
       }
 
@@ -198,58 +215,89 @@
     <header>
       <div class="navbar">
         <a href="#" class="logo">
-          <img src="Images/TT_Logo.jpg" alt="totellyToba Logo" />
-          <span>TotellyToba</span>
+          <img src="Images/TT_Logo_Hor_Wht.png" alt="TotellyToba Logo" />
         </a>
         <nav>
-          <a href="#about">About</a>
           <a href="#products">Products</a>
+          <a href="#about">About</a>
           <a href="#contact">Contact Us</a>
         </nav>
       </div>
     </header>
 
-    <section
-      id="hero"
-      style="background: #f2f2f2; text-align: center; padding: 100px 20px">
+    <div id="hero" style="background: #ffffff; text-align: center">
       <img
-        src="Images/TT_Logo_Hor.png"
+        src="Images/Heroi.jpeg"
         alt="TotellyToba Logo black"
         style="max-width: 100%; height: auto" />
-      <h1 style="color: rgb(0, 0, 0); font-family: serif">
+      <h1 class="hero-text" style="font-size: 64px">
         Totelly local, Totelly stylish, TotellyToba.
       </h1>
-    </section>
+    </div>
 
-    <section id="products" class="product-card">
-      <h2>Our Products</h2>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h2
+      id="products"
+      style="text-align: center; font-size: 54px; padding-top: 100px">
+      Our Products
+    </h2>
+    <section style="text-align: center">
       <div class="product">
-        <img
-          src="Images/Untitled_Artwork.png"
-          alt="Product 1 A look through the other side" />
-        <h3>A look through the other side</h3>
+        <a href="https://shop.totellytoba.ca/password" target="_blank">
+          <img
+            src="Images/Artwork - 1.png"
+            alt="Product 1 A look through the other side" />
+        </a>
+        <h3>A Look Through The Other Side</h3>
+        <h3>$20</h3>
       </div>
       <div class="product">
-        <img src="Images/Bison.jpg" alt="Product 2 The grazing bison" />
-        <h3>The grazing bison</h3>
+        <a href="https://shop.totellytoba.ca/password" target="_blank">
+          <img src="Images/Artwork - 4.png" alt="Product 2 The grazing bison" />
+        </a>
+        <h3>The Grazing Bison</h3>
+        <h3>$20</h3>
       </div>
       <div class="product">
-        <img src="Images/Dog.jpg" alt="Product 3 The Winter Dog" />
-        <h3>Winter dog</h3>
+        <a href="https://shop.totellytoba.ca/password" target="_blank">
+          <img src="Images/Artwork - 3.png" alt="Product 3 The Winter Dog" />
+        </a>
+        <h3>Winter Dog</h3>
+        <h3>$20</h3>
       </div>
       <div class="product">
-        <img src="Images/Baddie.png" alt="Product 4 Baddies Get Saddies" />
+        <a href="https://shop.totellytoba.ca/password" target="_blank">
+          <img
+            src="Images/Artwork - 2.png"
+            alt="Product 4 Baddies Get Saddies" />
+        </a>
         <h3>Baddies Get Saddies</h3>
+        <h3>$20</h3>
       </div>
     </section>
 
     <section id="about" style="text-align: center">
-      <h2 style="text-align: center">About Us</h2>
+      <h2 style="text-align: center; font-size: 54px">About Us</h2>
       <p>
-        Welcome to totellyToba! We are a proud Manitoba-based company creating
+        Welcome to TotellyToba! We are a proud Manitoba-based company creating
         stylish and practical tote bags inspired by the beauty of our province.
         <br />
-        Buy a bag for a price of <b>$20</b>
       </p>
 
       <br />
@@ -261,7 +309,7 @@
     </section>
 
     <section id="contact">
-      <h2>Contact Us</h2>
+      <h2 style="font-size: 50px">Contact Us</h2>
       <ul>
         <li>
           Email:
@@ -277,6 +325,12 @@
           Instagram:
           <a href="https://instagram.com/totelly.toba" target="_blank"
             >@totelly.toba</a
+          >
+        </li>
+        <li>
+          Shopify:
+          <a href="https://shop.totellytoba.ca/password" target="_blank"
+            >@totellyToba Shopify</a
           >
         </li>
       </ul>
