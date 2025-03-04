@@ -66,36 +66,45 @@
         margin: 30px auto 0 auto;
       }
 
+      /* Hero section style */
       #hero {
-        background: url("https://via.placeholder.com/250") no-repeat
-          center/cover;
-        color: #1c1c1c; /* Dark gray text */
-        text-align: center;
         position: relative;
-        height: 500px; /* Adjust height if needed */
+        width: 100%;
+        height: 100vh; /* Takes up the full viewport height */
+        background: url("Images/4bags.jpg") no-repeat center center;
+        background-size: cover; /* Ensure the whole image is visible */
+        display: flex;
+        align-items: flex-end; /* Position text towards the bottom */
+        justify-content: center;
+        padding: 20px;
       }
 
       .hero-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 3rem; /* Adjust font size for prominence */
-        font-family: "Arial", sans-serif;
-        color: white; /* White text for contrast on dark background */
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for better contrast */
+        color: white;
+        font-size: 4vw; /* Responsive font size */
         font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        text-align: center;
+        max-width: 800px;
+        background: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Semi-transparent background for readability */
+        padding: 20px;
+        border-radius: 10px;
       }
 
-      #hero h1 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-      }
+      @media (max-width: 768px) {
+        #hero {
+          height: 70vh; /* Reduce height for smaller screens */
+        }
 
-      #hero p {
-        font-size: 1.2rem;
+        .hero-text {
+          font-size: 5vw; /* Adjust text size */
+          padding: 15px;
+        }
       }
 
       #products {
@@ -225,18 +234,11 @@
       </div>
     </header>
 
-    <div id="hero" style="background: #ffffff; text-align: center">
-      <img
-        src="Images/Heroi.jpeg"
-        alt="TotellyToba Logo black"
-        style="max-width: 100%; height: auto" />
-      <h1 class="hero-text" style="font-size: 64px">
-        Totelly local, Totelly stylish, TotellyToba.
-      </h1>
+    <!-- Hero Section -->
+    <div id="hero">
+      <h1 class="hero-text">Totelly local, Totelly stylish, TotellyToba.</h1>
     </div>
 
-    <br />
-    <br />
     <br />
     <br />
     <br />
